@@ -3,12 +3,40 @@ package com.example.solarsystem
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Planet(val image: Int, val title: String, val shortDescription: String, val cardBackground: Int) : Parcelable {
+data class Planet(
+    val image: Int,
+    val title: String,
+    val shortDescription: String,
+    val cardBackground: Int,
+    val backgroundImage: Int,
+    val longDescription: String,
+    val day: String,
+    val year: String,
+    val radius: String,
+    val planetType: String,
+    val moons: String,
+    val gallery_1: Int,
+    val gallery_2: Int,
+    val gallery_3: Int,
+    var favorite: Int = 0,
+
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readInt()
+        parcel.readInt(),
+        parcel.readInt(),
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readInt(),
+        parcel.readInt(),
+        parcel.readInt(),
+
     ) {
     }
 
@@ -17,6 +45,16 @@ data class Planet(val image: Int, val title: String, val shortDescription: Strin
         parcel.writeString(title)
         parcel.writeString(shortDescription)
         parcel.writeInt(cardBackground)
+        parcel.writeInt(backgroundImage)
+        parcel.writeString(longDescription)
+        parcel.writeString(day)
+        parcel.writeString(year)
+        parcel.writeString(radius)
+        parcel.writeString(planetType)
+        parcel.writeString(moons)
+        parcel.writeInt(gallery_1)
+        parcel.writeInt(gallery_2)
+        parcel.writeInt(gallery_3)
     }
 
     override fun describeContents(): Int {

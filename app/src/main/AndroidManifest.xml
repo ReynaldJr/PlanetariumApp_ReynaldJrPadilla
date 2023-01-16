@@ -14,6 +14,9 @@
         android:theme="@style/Theme.SolarSystem"
         tools:targetApi="31">
         <activity
+            android:name=".activity_bookmarks"
+            android:exported="false" />
+        <activity
             android:name=".DetailActivity"
             android:exported="false" />
         <activity

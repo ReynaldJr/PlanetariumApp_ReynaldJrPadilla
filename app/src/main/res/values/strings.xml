@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">SolarSystem</string>
+    <string name="lorem_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="merc_overview">The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth\'s Moon.\n\nFrom the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere.\n\nBecause of Mercury\'s elliptical – egg-shaped – orbit, and sluggish rotation, the Sun appears to rise briefly, set, and rise again from some parts of the planet\'s surface. The same thing happens in reverse at sunset.</string>
+    <string name="merc_day">59 Earth Days</string>
+    <string name="merc_year">88 Earth Days</string>
+    <string name="merc_radius">1,516 miles</string>
+    <string name="merc_planet_type">Terrestrial</string>
+    <string name="merc_moons">0</string>
+
+    <string name="mars_overview">Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.\n\nMars is one of the most explored bodies in our solar system, and it\'s the only planet where we\'ve sent rovers to roam the alien landscape.\n\nNASA currently has two rovers (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface of Mars.</string>
+    <string name="mars_day">24.6 hours</string>
+    <string name="mars_year">687 Earth days</string>
+    <string name="mars_radius">2,106 miles</string>
+    <string name="mars_planet_type">Terrestrial</string>
+    <string name="mars_moons">2</string>
+
+    <string name="earth_overview">Our home planet is the third planet from the Sun, and the only place we know of so far that\’s inhabited by living things.\n\nWhile Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.\n\nThe name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means \“the ground.\”</string>
+    <string name="earth_day">23.9 Hours</string>
+    <string name="earth_year">365.25 Earth Days</string>
+    <string name="earth_radius">3,959 miles</string>
+    <string name="earth_planet_type">Terrestrial</string>
+    <string name="earth_moons">1</string>
+
+    <string name="jupiter_overview">Jupiter has a long history of surprising scientists – all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.\n\nFifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.\n\nJupiter\'s familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter\’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.</string>
+    <string name="jupiter_day">9.93 Hours</string>
+    <string name="jupiter_year">11.86 Earth Years</string>
+    <string name="jupiter_radius">69,911 km</string>
+    <string name="jupiter_planet_type">Gas Giant</string>
+    <string name="jupiter_moons">80</string>
+
+    <string name="venus_overview">Venus is the second planet from the Sun and is Earth\’s closest planetary neighbor. It\’s one of the four inner, terrestrial (or rocky) planets, and it’s often called Earth\’s twin because it\’s similar in size and density. These are not identical twins, however – there are radical differences between the two worlds.\n\nVenus has a thick, toxic atmosphere filled with carbon dioxide and it\’s perpetually shrouded in thick, yellowish clouds of sulfuric acid that trap heat, causing a runaway greenhouse effect. It\’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 900 degrees Fahrenheit (475 degrees Celsius) – hot enough to melt lead. The surface is a rusty color and it\’s peppered with intensely crunched mountains and thousands of large volcanoes. Scientists think it\’s possible some volcanoes are still active.</string>
+    <string name="venus_day">243 Earth Days</string>
+    <string name="venus_year">225 Earth Days</string>
+    <string name="venus_radius">6,051.8 km</string>
+    <string name="venus_planet_type">Terrestrial</string>
+    <string name="venus_moons">0</string>
+
+    <string name="uranus_overview">Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.\n\nIt was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead, the scientific community accepted Bode\'s suggestion to name it Uranus, the Greek god of the sky, as suggested by Bode.</string>
+    <string name="uranus_day">17 Hours 14 Minutes</string>
+    <string name="uranus_year">84 Earth Years</string>
+    <string name="uranus_radius">15,759.2 Miles</string>
+    <string name="uranus_planet_type">Ice Giant</string>
+    <string name="uranus_moons">27</string>
+
+    <string name="saturn_overview">Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.\n\nAdorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings – made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn\'s.\n\nLike fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.</string>
+    <string name="saturn_day">10.7 Hours</string>
+    <string name="saturn_year">29 Earth Years</string>
+    <string name="saturn_radius">36,183.7 Miles</string>
+    <string name="saturn_planet_type">Gas Giant</string>
+    <string name="saturn_moons">83</string>
+
+    <string name="neptune_overview">Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.\n\nMore than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.\n\nNASA\'s Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.</string>
+    <string name="neptune_day">16 Hours</string>
+    <string name="neptune_year">165 Earth Years</string>
+    <string name="neptune_radius">15,299.4 Miles</string>
+    <string name="neptune_planet_type">Ice Giant</string>
+    <string name="neptune_moons">14</string>
 </resources>
