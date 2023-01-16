@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addDataToList() {
-        planetList.add(Planet(R.drawable.semi_realis_mercury, "Mercury", "The Fastest Planet", R.drawable.gradient_mercury_bg))
+        planetList.add(Planet(R.drawable.mercury, "Mercury", "The Fastest Planet", R.drawable.gradient_mercury_bg))
         planetList.add(Planet(R.drawable.mars_planet, "Mars", "The Red Planet", R.drawable.gradient_mars_bg))
         planetList.add(Planet(R.drawable.earth_planet, "Earth", "Our Home", R.drawable.gradient_earth_bg))
 

@@ -5,12 +5,15 @@
       <map>
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/gradient_background.xml" value="0.2035" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/gradient_earth_bg.xml" value="0.1765" />
+        <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/gradient_fade.xml" value="0.1765" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/gradient_mars_bg.xml" value="0.1765" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/gradient_mercury_bg.xml" value="0.1655" />
-        <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/drawable/mercury.xml" value="0.304" />
+        <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/layout/activity_detail.xml" value="0.25" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/layout/planet_category.xml" value="0.358695652173913" />
         <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/layout/planet_item.xml" value="0.22" />
+        <entry key="..\:/Documents/University-Related-Things/BSC-Year-2/Smartphone-Apps/SolarSystem/app/src/main/res/menu/bottom_nav.xml" value="0.3614583333333333" />
       </map>
     </option>
   </component>
