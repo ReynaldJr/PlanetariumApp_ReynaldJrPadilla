@@ -1,4 +1,4 @@
-package com.example.solarsystem
+package com.planetarium.myapp
 
 import android.view.LayoutInflater
 import android.view.View

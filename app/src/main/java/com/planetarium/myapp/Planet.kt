@@ -1,4 +1,4 @@
-package com.example.solarsystem
+package com.planetarium.myapp
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -18,7 +18,7 @@ data class Planet(
     val gallery_1: Int,
     val gallery_2: Int,
     val gallery_3: Int,
-    var favorite: Int = 0,
+    val planetSound: String,
 
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
@@ -36,6 +36,7 @@ data class Planet(
         parcel.readInt(),
         parcel.readInt(),
         parcel.readInt(),
+        parcel.readString()!!
 
     ) {
     }
@@ -55,6 +56,7 @@ data class Planet(
         parcel.writeInt(gallery_1)
         parcel.writeInt(gallery_2)
         parcel.writeInt(gallery_3)
+        parcel.writeString(planetSound)
     }
 
     override fun describeContents(): Int {

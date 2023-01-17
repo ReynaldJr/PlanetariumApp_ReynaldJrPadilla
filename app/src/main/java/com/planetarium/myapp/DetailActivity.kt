@@ -1,4 +1,4 @@
-package com.example.solarsystem
+package com.planetarium.myapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
 import kotlinx.android.synthetic.main.activity_detail.*
-import kotlin.properties.Delegates
+import android.media.MediaPlayer
+import android.view.animation.AnimationUtils
+import kotlinx.android.synthetic.main.activity_splash.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -17,10 +19,13 @@ class DetailActivity : AppCompatActivity() {
     private var galleryImage1: Int = 0
     private var galleryImage2: Int = 0
     private var galleryImage3: Int = 0
+    var mMediaPlayer: MediaPlayer? = null
+    private var planetSound:String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
 
         val planet = intent.getParcelableExtra<Planet>("Planet")
 
@@ -38,6 +43,7 @@ class DetailActivity : AppCompatActivity() {
             galleryImage1 = planet.gallery_1
             galleryImage2 = planet.gallery_2
             galleryImage3 = planet.gallery_3
+            planetSound = planet.planetSound
         }
 
         init()
@@ -45,6 +51,24 @@ class DetailActivity : AppCompatActivity() {
         back_button.setOnClickListener() {
             onBackPressed()
         }
+
+        val buttonClick = AnimationUtils.loadAnimation(this, R.anim.button_click)
+        playButton.setOnClickListener {
+            playButton.startAnimation(buttonClick)
+            playSound()
+        }
+
+        pauseButton.setOnClickListener {
+            pauseButton.startAnimation(buttonClick)
+            pauseSound()
+        }
+
+        stopButton.setOnClickListener {
+            stopButton.startAnimation(buttonClick)
+            stopSound()
+        }
+
+
     }
 
     private fun init() {
@@ -67,5 +91,38 @@ class DetailActivity : AppCompatActivity() {
         galleryList.add(Gallery(galleryImage2))
         galleryList.add(Gallery(galleryImage3))
 
+    }
+
+
+    // 1. Plays the sound
+    fun playSound() {
+        if (mMediaPlayer == null) {
+            mMediaPlayer = MediaPlayer.create(this, resources.getIdentifier(planetSound,"raw", packageName))
+            mMediaPlayer!!.isLooping = true
+            mMediaPlayer!!.start()
+        } else mMediaPlayer!!.start()
+    }
+
+    // 2. Pause playback
+    fun pauseSound() {
+        if (mMediaPlayer?.isPlaying == true) mMediaPlayer?.pause()
+    }
+
+    // 3. Stops playback
+    fun stopSound() {
+        if (mMediaPlayer != null) {
+            mMediaPlayer!!.stop()
+            mMediaPlayer!!.release()
+            mMediaPlayer = null
+        }
+    }
+
+    // 4. Destroys the MediaPlayer instance when the app is closed
+    override fun onStop() {
+        super.onStop()
+        if (mMediaPlayer != null) {
+            mMediaPlayer!!.release()
+            mMediaPlayer = null
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.solarsystem
+package com.planetarium.myapp
 
 import org.junit.Test
 
