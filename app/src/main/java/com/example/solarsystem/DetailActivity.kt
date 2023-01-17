@@ -41,6 +41,10 @@ class DetailActivity : AppCompatActivity() {
         }
 
         init()
+
+        back_button.setOnClickListener() {
+            onBackPressed()
+        }
     }
 
     private fun init() {

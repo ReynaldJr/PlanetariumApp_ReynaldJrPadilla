@@ -1,12 +1,19 @@
 package com.example.solarsystem
 
+import android.app.Dialog
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.view.animation.AnimationUtils
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_popup.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -21,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        displayPopup()
         init()
     }
 
@@ -56,6 +64,19 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    private fun displayPopup() {
+        var popupScreen = Dialog(this)
+        popupScreen.setCancelable(false)
+
+        popupScreen.setContentView(R.layout.activity_popup)
+        popupScreen.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        var okButton = popupScreen.findViewById<Button>(R.id.pop_up_button)
+        okButton.setOnClickListener {
+            popupScreen.dismiss()
+        }
+        popupScreen.show()
+    }
 
     private fun filterList(query: String?) {
         if (query != null) {
