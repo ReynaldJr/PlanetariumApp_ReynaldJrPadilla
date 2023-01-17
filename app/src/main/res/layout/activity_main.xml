@@ -52,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:background="#242642"
                     app:iconifiedByDefault="false"
+                    android:theme="@style/AppSearchView"
                     app:queryBackground="@android:color/transparent"
                     app:queryHint="Search Planet..." />
 
